@@ -10,15 +10,14 @@ Forked from [https://github.com/shiva/st](https://github.com/shiva/st) for simpl
 
 ## My own additions
 
-+ Default font is system "Inconsolata" at 22pt
-+ Fixed transparency patch (see below for installation)
++ Default font is system monospace at 22pt
++ Alpha/transparency patch
 + Alt-k and Alt-j scroll back/foward in history one line at a time
 + Alt-u and Alt-d scroll back/foward in history a page at a time
 + Ctrl++ to increase font
 + Ctrl+- to decrease font
 + Ctrl+Alt+c to copy
 + Ctrl+Alt+v to paste
-
 
 ## Terminal-specific mappings
 
