@@ -104,7 +104,6 @@ static const char *colorname[] = {
 	"#6c71c4",  /* 13: brmagenta*/
 	"#93a1a1",  /* 14: brcyan   */
 	"#fdf6e3",  /* 15: brwhite  */
-	"black",
 };
 
 
@@ -189,6 +188,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,		            XK_d,		        kscrolldown,    {.i = -1} },
 	{ ControlMask,          XK_Up,          xzoom,          {.f = +2} },
 	{ ControlMask,          XK_Down,        xzoom,          {.f = -2} },
+	{ ControlMask,          XK_0,           xzoomreset,     {.f =  0} },
 	{ MODKEY|ShiftMask,     XK_Right,       xzoomreset,     {.f =  0} },
 };
 
