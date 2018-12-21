@@ -355,7 +355,6 @@ static void clippaste(const Arg *);
 static void kscrolldown(const Arg *);
 static void kscrollup(const Arg *);
 static void numlock(const Arg *);
-static void swapcolors(const Arg *);
 static void selpaste(const Arg *);
 static void xzoom(const Arg *);
 static void xzoomabs(const Arg *);
@@ -565,8 +564,6 @@ static char *opt_line  = NULL;
 static char *opt_name  = NULL;
 static char *opt_title = NULL;
 static int oldbutton   = 3; /* button event on startup: 3 = release */
-
-static int usealtcolors = 0; /* 1 to use alternate palette */
 
 static char *usedfont = NULL;
 static double usedfontsize = 0;
@@ -3344,7 +3341,7 @@ sixd_to_16bit(int x)
 
 const char* getcolorname(int i)
 {
-    return (usealtcolors) ?  altcolorname[i] : colorname[i];
+    return colorname[i];
 }
 
 int
@@ -4364,14 +4361,6 @@ void
 numlock(const Arg *dummy)
 {
 	term.numlock ^= 1;
-}
-
-void
-swapcolors(const Arg *dummy)
-{
-	usealtcolors = !usealtcolors;
-	xloadcols();
-	redraw();
 }
 
 char*
