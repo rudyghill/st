@@ -186,7 +186,6 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-  //Additions
 	{ MODKEY,            	  XK_k,  		      kscrollup,      {.i = 2}  },
 	{ MODKEY,            	  XK_j,   	      kscrolldown,    {.i = 2}  },
 	{ MODKEY,		            XK_u,		        kscrollup,      {.i = -1} },
