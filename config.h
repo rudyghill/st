@@ -1,8 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
 /*
- * appearance
- *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char font[] = "mono:pixelsize=22:antialias=true:autohint=true";
@@ -160,6 +158,13 @@ static MouseKey mkeys[] = {
 	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
 	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
 };
+static char *openurlcmd[] = { 
+  "/bin/sh",
+  "-c",
+  "linkgrabber",
+  "externalpipe",
+  NULL
+};
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
@@ -189,7 +194,7 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Up,          xzoom,          {.f = +2} },
 	{ ControlMask,          XK_Down,        xzoom,          {.f = -2} },
 	{ ControlMask,          XK_0,           xzoomreset,     {.f =  0} },
-	{ MODKEY|ShiftMask,     XK_Right,       xzoomreset,     {.f =  0} },
+  { MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } },
 };
 
 /*
