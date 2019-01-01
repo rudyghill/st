@@ -17,8 +17,8 @@ Rudy Hill's fork of the [suckless terminal (st)](https://st.suckless.org/) with 
 + Default color theme is gruvbox
 
 ### Clipboard
-+ Shift+Alt+c to copy
-+ Shift+Alt+v to paste
++ Alt+Shift+c to copy
++ Alt+Shift+v to paste
 + Shift+Insert to paste
 
 ### Scrollback
@@ -30,8 +30,8 @@ Rudy Hill's fork of the [suckless terminal (st)](https://st.suckless.org/) with 
 ### Increase/Decrease font
 + Ctrl++/- to increase/decrease font size
 + Ctrl+0 to reset font size
-+ Shift+Alt+PageUp/PageDown to increase/decrease font size
-+ Shift+Alt+Home to reset font size
++ Alt+Shift+PageUp/PageDown to increase/decrease font size
++ Alt+Shift+Home to reset font size
 
 ### Pipe URLs to dmenu
 + Alt+l for link export
