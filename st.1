@@ -142,6 +142,15 @@ Print the full screen to the
 Print the selection to the
 .I iofile.
 .TP
+.B Ctrl-Up
+Increase font size.
+.TP
+.B Ctrl-Down
+Decrease font size.
+.TP
+.B Ctrl-0
+Reset to default font size.
+.TP
 .B Alt-Shift-Page Up
 Increase font size.
 .TP
@@ -151,21 +160,14 @@ Decrease font size.
 .B Alt-Shift-Home
 Reset to default font size.
 .TP
-.B Shift-Insert
-Paste from primary selection (middle mouse button).
-.TP
-.B Alt-Shift-Insert
-Paste from clipboard selection.
-.TP
 .B Alt-Shift-c
 Copy the selected text to the clipboard selection.
 .TP
 .B Alt-Shift-v
 Paste from the clipboard selection.
 .TP
-.B Alt-Ctrl
-Launch dmenu to enter a unicode codepoint and send the corresponding glyph
-to st.
+.B Alt-l
+Pipe buffer to linkgrabber.
 .SH CUSTOMIZATION
 .B st
 can be customized by creating a custom config.h and (re)compiling the source
